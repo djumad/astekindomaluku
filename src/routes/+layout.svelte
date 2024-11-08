@@ -38,6 +38,7 @@
             <!-- Menu Items -->
             <ul class="flex space-x-6">
                 <li><a href="/" class="hover:text-blue-600 transition duration-200">Beranda</a></li>
+		<li><a href="/about" class="hover:text-blue-600 transition duration-200">About</a></li>
                 <li><a href="/galeri" class="hover:text-blue-600 transition duration-200">Galeri</a></li>
                 <li><a href="/layanan" class="hover:text-blue-600 transition duration-200">Layanan</a></li>
                 <li>
