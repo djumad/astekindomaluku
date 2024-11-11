@@ -38,7 +38,7 @@
             <!-- Menu Items -->
             <ul class="flex space-x-6">
                 <li><a href="/" class="hover:text-blue-600 transition duration-200">Beranda</a></li>
-		        <li><a href="/tentang" class="hover:text-blue-600 transition duration-200">Tentang</a></li>
+		        <li><a href="/tentang" class="hover:text-blue-600 transition duration-200">Tentang Kami</a></li>
                 <li><a href="/galeri" class="hover:text-blue-600 transition duration-200">Galeri</a></li>
                 <li><a href="/layanan" class="hover:text-blue-600 transition duration-200">Layanan</a></li>
                 <li>
