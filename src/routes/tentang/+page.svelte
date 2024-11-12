@@ -4,6 +4,7 @@
     export let data;
     let safeContent = '';
     const tentang = data.tentang;
+    console.log(tentang);
 
     onMount(() => {
         safeContent = sanitizeHtml(data.tentang.isi);
