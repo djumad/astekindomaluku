@@ -1,7 +1,7 @@
 <script lang="ts">
 	export let data;
 	const sertifikasi = data.sertifikasi.items;
-	const tim = data.tim.items;
+	const tim = data.tim;
 	const berita = data.berita.items;
 </script>
 
@@ -89,14 +89,14 @@
 			>
 				<img
 					class="w-32 md:w-40 h-32 md:h-40 object-cover transition-transform duration-500 hover:scale-110 rounded-full mx-auto mt-4 md:mt-6"
-					src="https://astekindomaluku.pockethost.io/api/files/{tim.collectionId}/{tim.id}/{tim.foto_anggota}"
-					alt={tim.nama_anggota}
+					src="https://astekindomaluku.pockethost.io/api/files/{tim.collectionId}/{tim.id}/{tim.avatar}"
+					alt={tim.name}
 				/>
 				<div class="p-4 md:p-6 text-center">
 					<h3 class="text-lg md:text-xl font-bold uppercase text-gray-800 mb-1 md:mb-2">
-						{tim.nama_anggota}
+						{tim.name}
 					</h3>
-					<p class="text-xs md:text-sm text-gray-600">{tim.jabatan}</p>
+					<p class="text-xs md:text-sm text-gray-600">{tim.role}</p>
 				</div>
 			</div>
 		{/each}
@@ -111,7 +111,8 @@
 
 	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
 		{#each berita as item}
-			<div
+			<a href="/berita/{item.id}">
+				<div
 				class="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:shadow-2xl hover:scale-105"
 			>
 				<img
@@ -124,7 +125,7 @@
 						{item.nama_berita}
 					</h3>
 				</div>
-			</div>
+			</div></a>
 		{/each}
 	</div>
 </div>
