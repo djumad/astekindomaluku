@@ -48,7 +48,7 @@
                         on:click={toggleDropdown} 
                         class="hover:text-blue-600 transition duration-200"
                     >
-                        Visi & Misi
+                        Tentang Kami
                     </button>
                     {#if isDropdownOpen}
                         <div class="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded shadow-lg w-48">
